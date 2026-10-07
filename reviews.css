@@ -1,0 +1,22 @@
+.framer-QQaHO .framer-sdkc21 { display: block !important; width: 100% !important; }
+.review-slider { --review-cards: 4; width: 100%; box-sizing: border-box; overflow: hidden; font-family: Inter, Arial, sans-serif; color: #151515; }
+.review-viewport { overflow: hidden; touch-action: pan-y; }
+.review-track { display: flex; gap: 16px; transition: transform 450ms ease; }
+.review-slide { flex: 0 0 calc((100% - 48px) / 4); min-width: 0; box-sizing: border-box; padding: 24px 22px; background: #f5f7fa; border: 1px solid #e3e9f0; border-radius: 14px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.review-stars { align-self: center; text-align: center; color: #4774a9; font-size: 19px; letter-spacing: 2px; }
+.review-slide blockquote { font-size: 16px; line-height: 1.6; font-weight: 400; margin: 18px 0 26px; }
+.review-person { margin-top: auto; align-self: center; width: 100%; text-align: center; }
+.review-person strong { display: block; font-size: 17px; margin-bottom: 6px; }
+.review-person p { color: #626b76; margin: 0; font-size: 13px; line-height: 1.5; }
+.review-controls { display: flex; align-items: center; justify-content: center; gap: 22px; padding: 24px 16px 32px; }
+.review-controls button { cursor: pointer; border: 1px solid #c6d4e4; background: white; color: #4774a9; min-width: 44px; height: 44px; border-radius: 50%; font-size: 24px; }
+.review-controls button:hover { background: #e4edf7; }
+.review-controls button:focus-visible { outline: 3px solid #4774a9; outline-offset: 3px; }
+.review-dots { display: flex; gap: 2px; }
+.review-dots button { min-width: 32px; width: 32px; border: 0; border-radius: 8px; background: transparent; display: grid; place-items: center; }
+.review-dots button::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #bccbdb; }
+.review-dots button[aria-pressed="true"]::after { background: #4774a9; width: 20px; border-radius: 6px; }
+.review-dots button[hidden] { display: none; }
+@media (max-width: 1000px) { .review-slider { --review-cards: 2; } .review-slide { flex-basis: calc((100% - 16px) / 2); } }
+@media (max-width: 600px) { .review-slider { --review-cards: 1; } .review-slide { flex-basis: 100%; padding: 24px; } .review-controls { gap: 8px; } }
+@media (prefers-reduced-motion: reduce) { .review-track { transition: none; } }

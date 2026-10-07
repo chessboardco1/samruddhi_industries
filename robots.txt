@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chessboardco1.github.io/samruddhi_industries/sitemap.xml
