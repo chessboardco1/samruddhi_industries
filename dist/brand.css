@@ -1,0 +1,104 @@
+/* Give the stacked Samruddhi logo enough height to remain legible. */
+:where(a, div):has(> [data-framer-background-image-wrapper] > img[src$="logo-1-blue.png"]) {
+  width: 140px !important;
+  height: auto !important;
+  aspect-ratio: 2934 / 2326 !important;
+  flex-shrink: 0 !important;
+}
+@media (max-width: 809px) {
+  :where(a, div):has(> [data-framer-background-image-wrapper] > img[src$="logo-1-blue.png"]) {
+    width: 120px !important;
+  }
+}
+
+/* Keep the brand accent consistent after Framer hydration. */
+:root, body {
+  --token-666ee170-5b9f-47c6-ad35-b710c5db9fc5: #4774a9 !important;
+  --token-f34a8341-d076-4cc4-bf03-b456a5c6c7ab: #4774a9 !important;
+  --token-f77bd4e9-b817-4bf0-a253-dffefe6609e4: #4774a9 !important;
+  --token-c9461aee-312e-42d9-817a-d2c51b00fe24: #4774a900 !important;
+}
+
+/* Hide the floating template promotion badges on every page. */
+#__framer-badge-container,
+.__framer-badge,
+[data-framer-name="Get It Button"] {
+  display: none !important;
+}
+
+/* Fit the hero headline into two lines at every viewport width. */
+.framer-QQaHO .framer-kYqNX .framer-jqhpro {
+  container-type: inline-size;
+}
+.framer-QQaHO .framer-kYqNX .framer-jqhpro h1 {
+  font-size: 7.5cqw !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+}
+
+/* Recolor the hexagonal CTA texture to the brand's blue palette. */
+img[src*="qbL1L4EXzTjrYawN3GV9Zww8wb4"] {
+  filter: grayscale(1) sepia(1) saturate(3) hue-rotate(170deg) brightness(1.4) !important;
+}
+
+/* Blue footer glows; retain the original soft blur and opacity. */
+.framer-1l8mp3y > [data-framer-background-image-wrapper],
+.framer-1untjje > [data-framer-background-image-wrapper] {
+  background: radial-gradient(closest-side, #4774a9 85%, transparent 100%);
+}
+.framer-1l8mp3y img[src*="l71ppjhZwGKbKAI3hXw1jc50PBw"],
+.framer-1untjje img[src*="l71ppjhZwGKbKAI3hXw1jc50PBw"] {
+  opacity: 0 !important;
+}
+
+/* Keep the complete footer wordmark above the bottom edge. */
+.framer-IWEH0 .framer-12av4bi {
+  bottom: 16px !important;
+}
+.framer-IWEH0 .framer-sq8l5y {
+  aspect-ratio: 7 / 1 !important;
+  height: auto !important;
+  min-height: 70px;
+}
+
+/* Remove the About page recognition heading and award badges after hydration. */
+.framer-1XNuX .framer-r9eztz {
+  display: none !important;
+}
+
+/* Expandable textile production capabilities and machinery details. */
+.samruddhi-capabilities {width:100%;font-family:inherit;color:#5c5c5c;font-size:18px;line-height:1.6}
+.samruddhi-capabilities details {border-bottom:1px solid #d1d1d1;padding:14px 0}
+.samruddhi-capabilities summary {cursor:pointer;color:#151515;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.samruddhi-capabilities summary::-webkit-details-marker {display:none}
+.samruddhi-capabilities summary::after {content:'+';color:#4774a9;font-size:24px;flex-shrink:0}
+.samruddhi-capabilities details[open]>summary::after {content:'?'}
+.samruddhi-capabilities summary:focus-visible {outline:2px solid #4774a9;outline-offset:4px}
+.samruddhi-capabilities ul {padding-left:22px;margin:16px 0 4px}
+.samruddhi-capabilities p {margin:16px 0}
+.samruddhi-capabilities h3 {font-size:20px;color:#151515;margin:24px 0 8px}
+.samruddhi-capabilities details:last-child {margin-top:24px}
+@media(max-width:809px){.samruddhi-capabilities{font-size:16px}}
+
+/* Complete textile services and production machinery on the services page. */
+.framer-xnms8 .framer-1dqjmja {display:block !important;height:auto !important}
+.textile-services-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;width:100%;font-family:inherit}
+.textile-service-card {background:#fff;border-radius:8px;padding:32px;color:#5c5c5c;font-size:18px;line-height:1.6}
+.textile-service-card h2,.textile-machinery h2 {color:#151515;font-size:28px;line-height:1.25;margin:0 0 20px}
+.textile-service-card ul,.textile-machinery ul {padding-left:22px;margin:16px 0}
+.textile-service-card li,.textile-machinery li {margin-bottom:8px}
+.textile-machinery {margin-top:64px;background:#fff;border-radius:8px;padding:40px;color:#5c5c5c;font-family:inherit;font-size:18px;line-height:1.6}
+.textile-machinery h3 {color:#151515;font-size:24px;margin:32px 0 12px}
+.textile-machinery p {margin:12px 0}
+@media(max-width:809px){.textile-services-grid{grid-template-columns:1fr;gap:20px}.textile-service-card,.textile-machinery{padding:24px;font-size:16px}.textile-machinery{margin-top:36px}.textile-service-card h2,.textile-machinery h2{font-size:24px}}
+
+/* Match the original services image card layout. */
+.textile-services-grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;align-items:stretch}
+.textile-service-card {padding:20px;border-radius:6px}
+.textile-card-image {display:block;width:100%;aspect-ratio:1.75;object-fit:cover;border-radius:5px;margin-bottom:20px}
+.textile-service-card h2,.textile-service-card h3 {font-size:24px;line-height:1.25;margin:0 0 12px;color:#151515}
+.textile-machinery {background:transparent;padding:0;border-radius:0}
+.textile-machinery > p {margin-bottom:32px;max-width:900px}
+.textile-machinery .textile-service-card h3 {margin:0 0 12px}
+@media(min-width:810px) and (max-width:1199px){.textile-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:809px){.textile-services-grid{grid-template-columns:1fr;gap:20px}.textile-service-card{padding:20px}.textile-machinery{padding:0}}
