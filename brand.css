@@ -102,3 +102,6 @@ img[src*="qbL1L4EXzTjrYawN3GV9Zww8wb4"] {
 .textile-machinery .textile-service-card h3 {margin:0 0 12px}
 @media(min-width:810px) and (max-width:1199px){.textile-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:809px){.textile-services-grid{grid-template-columns:1fr;gap:20px}.textile-service-card{padding:20px}.textile-machinery{padding:0}}
+
+/* Keep the closed navigation backdrop from dimming the page. */
+.framer-vr8ZA .framer-9tg0r2 { display:none !important; opacity:0 !important; pointer-events:none !important; }

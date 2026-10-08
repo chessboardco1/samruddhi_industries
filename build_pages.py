@@ -54,6 +54,8 @@ for source in SOURCE.rglob('*'):
         text = re.sub(r'(<script type="application/json" id="saved-page-content">)(.*?)(</script>)',manifest,text,flags=re.S)
         text = re.sub(r'(href|src)="([^"]*)"', lambda m:m.group(1)+'="'+local_url(m.group(2))+'"',text)
         text = text.replace("const icon = '/assets/logo-1-blue.png';", "const icon = '"+BASE+"assets/logo-1-blue.png';")
+        # The closed menu backdrop is not page content and must remain hidden.
+        text = re.sub(r'<div\b[^>]*class="framer-9tg0r2"[^>]*>.*?</div>', '', text, flags=re.S)
         text = text.replace('</head>', visibility+'</head>')
         text = re.sub(r'opacity:\s*0(?=;|\")','opacity:1',text)
         text = re.sub(r'transform:\s*translateY\(40px\);?','',text)
