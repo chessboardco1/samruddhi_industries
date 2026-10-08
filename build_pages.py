@@ -57,6 +57,8 @@ for source in SOURCE.rglob('*'):
         # The closed menu backdrop is not page content and must remain hidden.
         text = re.sub(r'<div\b[^>]*class="framer-9tg0r2"[^>]*>.*?</div>', '', text, flags=re.S)
         text = text.replace('</head>', visibility+'</head>')
+        text = text.replace('</head>', '<link rel="stylesheet" href="'+BASE+'site-motion.css"></head>')
+        text = text.replace('</body>', '<script src="'+BASE+'site-motion.js"></script></body>')
         text = re.sub(r'opacity:\s*0(?=;|\")','opacity:1',text)
         text = re.sub(r'transform:\s*translateY\(40px\);?','',text)
         route = '' if relative.name == 'index.html' else relative.as_posix().removesuffix('.html')+'/'

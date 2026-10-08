@@ -1,0 +1,6 @@
+@media(prefers-reduced-motion:no-preference){
+.textile-service-card,.review-slide,.current-blog-cards>a,a.framer-WGmml{transition:box-shadow .25s ease,scale .25s ease}
+.textile-service-card:hover,.current-blog-cards>a:hover,a.framer-WGmml:hover{scale:1.015;box-shadow:0 12px 30px #1515151a}
+.blog-home-quote,.review-controls button,.textile-slider-controls button{transition:background-color .2s ease,scale .2s ease}
+.blog-home-quote:hover,.review-controls button:hover,.textile-slider-controls button:hover{scale:1.04}
+}
