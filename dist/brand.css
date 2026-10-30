@@ -105,3 +105,8 @@ img[src*="qbL1L4EXzTjrYawN3GV9Zww8wb4"] {
 
 /* Keep the closed navigation backdrop from dimming the page. */
 .framer-vr8ZA .framer-9tg0r2 { display:none !important; opacity:0 !important; pointer-events:none !important; }
+
+/* Shift footer contact details slightly toward the links column. */
+@media (min-width:810px) {
+ footer.framer-IWEH0 .framer-12xslp0 { position:relative; left:-20px; }
+}
